@@ -1,37 +1,8 @@
 notify:
   type: bark
-  bark_url: ""
+  bark_url: "" # 由Actions环境变量注入BARK_URL
 
-targets:
-  - region: "杨浦区"
-    min_available: 1
-    date_start: "2025-12-13"
-    min_consecutive: 3
-  - region: "徐汇区"
-    min_available: 1
-    date_start: "2025-12-13"
-    min_consecutive: 3
-  - region: "静安区"
-    min_available: 1
-    date_start: "2025-12-13"
-    min_consecutive: 3
-  - region: "长宁区"
-    min_available: 1
-    date_start: "2025-12-13"
-    min_consecutive: 3
-  - region: "闵行区"
-    min_available: 1
-    date_start: "2025-12-13"
-    min_consecutive: 3
-  - region: "嘉定区"
-    min_available: 1
-    date_start: "2025-12-13"
-    min_consecutive: 3
-  - region: "黄浦区"
-    min_available: 1
-    date_start: "2025-12-13"
-    min_consecutive: 3
-  - region: "虹口区"
-    min_available: 1
-    date_start: "2025-12-13"
-    min_consecutive: 3
+filters:
+  districts: ["杨浦区","徐汇区","静安区","长宁区","闵行区","嘉定区","黄浦区","虹口区"]
+  date_start: "2025-12-13"
+  min_consecutive: 3
